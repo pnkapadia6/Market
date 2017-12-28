@@ -1,0 +1,37 @@
+.kitten-wrapper {
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #e6e6e6;
+  margin: 2rem 0;
+  width: 60rem;
+}
+
+.kitten-image-wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.kitten-image {
+  width: 100%;
+}
+
+.kitten-footer {
+  align-items: center;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.kitten-price,
+.kitten-age {
+  font-size: 1.6rem;
+}
+
+.kitten-buy {
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.kitten-placeholder {
+  font-size: 2rem;
+  text-align: center;
+}

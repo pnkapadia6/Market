@@ -1,0 +1,83 @@
+$font-small: 1.6rem;
+$input-border-color: #ccc;
+$disabled-input-color: #e6e6e6;
+
+@mixin no-outline {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.sell-section {
+  background: #fff;
+  bottom: 5rem;
+  position: fixed;
+  right: 5rem;
+}
+
+.sell-section-body-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sell-sub-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.sell-section-label {
+  font-size: $font-small;
+  flex: 1;
+}
+
+.sell-kitten-input {
+  height: 2rem;
+  flex: 2;
+
+  @include no-outline();
+}
+
+.sell-section-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.sell-cancel-button,
+.sell-button {
+  align-items: center;
+  background: #fff;
+  border: 0.1rem solid $input-border-color;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-size: $font-small;
+  height: 4rem;
+  justify-content: center;
+  margin-left: 1rem;
+  width: 8rem;
+
+  &[disabled] {
+    background: $disabled-input-color;
+    border-color: $disabled-input-color;
+    cursor: not-allowed;
+  }
+
+  @include no-outline();
+}
+
+.sell-section--expanded {
+  border: 0.1rem solid $input-border-color;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 40rem;
+
+  .sell-button {
+    border: 0.1rem solid $input-border-color;
+    border-radius: 1rem;
+  }
+}
